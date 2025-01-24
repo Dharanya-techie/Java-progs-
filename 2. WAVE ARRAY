@@ -44,3 +44,17 @@ public static void main(String[] args)
     }
 }
 }
+
+o/p:
+Enter the value of n: 10
+1
+2
+1
+4
+3
+5
+1
+767
+76
+8
+It's a wave Array
