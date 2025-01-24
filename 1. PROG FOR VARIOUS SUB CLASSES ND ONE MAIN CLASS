@@ -46,3 +46,7 @@ class Main {
       System.out.println("Division : "+ob4.div(a,b));
     }
 }
+
+
+i/p: 10 nd 2
+o/p: ans
