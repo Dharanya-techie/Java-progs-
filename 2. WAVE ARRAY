@@ -1,0 +1,46 @@
+import java.util.*;
+class A1 {
+    public static boolean wave(int a[],int n)
+    {
+      if(n<2)
+      {
+          return false;
+      }
+     for(int i=0; i<n-1; i++)
+     {
+         if(i%2==0)
+         {
+         if(a[i]>=a[i+1])
+         {
+             return false;
+     }
+     }
+     else if (a[i]<=a[i+1])
+     {
+             return false;
+     }
+    }
+    return true;
+}
+}
+class Main {
+public static void main(String[] args)
+{
+    Scanner in=new Scanner(System.in);
+    System.out.print("Enter the value of n: ");
+    int n= in.nextInt();
+    int a[]=new int[n];
+    for (int i=0; i<=n-1; i++)
+    {
+        a[i]=in.nextInt();
+    }
+    boolean x=A1.wave(a,n);
+    if(x)
+    {
+        System.out.print("Not a wave Array");
+    }
+    else{
+         System.out.print("It's a wave Array");
+    }
+}
+}
