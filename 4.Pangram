@@ -1,3 +1,10 @@
+A pangram is a sentence that contains every letter of the alphabet at least once. It’s often used to test typefaces, keyboards, or any system that deals with text.
+
+Example of a Pangram:
+"The quick brown fox jumps over the lazy dog."
+This sentence contains all 26 letters of the English alphabet from A to Z.
+
+
 import java.util.*;
 public class Main{
     public static void main(String[] args) {
