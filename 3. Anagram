@@ -13,15 +13,18 @@ public class Main {
         return Arrays.equals(charArray1, charArray2);
     }
     public static void main(String[] args) {
-        String word1 = "listen";
-        String word2 = "silent";
-        if (areAnagrams(word1, word2)) {
-            System.out.println(word1 + " and " + word2 + " are anagrams.");
+        Scanner in = new Scanner(System.in);
+        String a = in.nextLine();
+        String b = in.nextLine();
+        if (areAnagrams(a,b)) {
+            System.out.println(a + " and " + b + " are anagrams.");
         } else {
-            System.out.println(word1 + " and " + word2 + " are not anagrams.");
+            System.out.println(a + " and " + b + " are not anagrams.");
         }
     }
 }
 
 
-o/p: listen and silent are anagrams.
+o/p: listen
+silent 
+listen and silent are anagrams.
