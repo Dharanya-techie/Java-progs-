@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a sentence:");
+        String input = scanner.nextLine();
+        input = input.toLowerCase();
+        boolean[] alphabet = new boolean[26];
+        for (char c : input.toCharArray()) {
+            if (c >= 'a' && c <= 'z') {
+                alphabet[c - 'a'] = true;
+            }
+        }
+        boolean isPangram = true;
+        for (boolean b : alphabet) {
+            if (!b) {
+                isPangram = false;
+                break;
+            }
+        }
+        if (isPangram) {
+            System.out.println("The input is a pangram.");
+        } else {
+            System.out.println("The input is not a pangram.");
+        }
+        scanner.close();
+    }
+}
+
+o/p:
+sentence of 26 letters will be a pangram else not
+
